@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm Của Bạn</title>
+    <link rel="stylesheet" href="face_product.css">
+    <link rel="stylesheet" href="/fonts/themify-icons/themify-icons.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="https://romand.us/cdn/shop/files/romnd_logo4_420x.png?v=1728358166" alt="Merzy Logo" class="logo">
+            <nav>
+                <ul class="left-menu">
+                    <li><a href="/1_home_PAGE/home.html"><i class="ti-home"></i>  TRANG CHỦ</a></li>
+                    <li><a href="/2_newproduct_PAGE/new_product.html">SẢN PHẨM MỚI</a></li>
+                    <li><a href="/3_lipproduct_PAGE/lip_product.html">MÔI</a></li>
+                    <li><a href="/4_eyeproduct_PAGE/eye_product.html">MẮT</a></li>
+                    <li><a href="face_product.html" class="li-mat">MẶT</a></li>
+                </ul>
+                <ul class="right-menu">
+                    <li>
+                        <button id="search-btn" class="search-btn" aria-label="Search" onclick="noTifyMessage()">
+                            <i class="ti-search"></i>
+                        </button>
+                    </li>
+                    <li><a href="/6_account_PAGE/account.html"><i class="ti-user"></i></a></li>
+                    <li><a href="/7_shoppingCart_PAGE/shopping_cart.html"><i class="ti-shopping-cart"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="search-bar" class="search-bar" style="display: none;">
+        <input type="text" id="search-input" placeholder="Nhập sản phẩm cần tìm...">
+        <button id="close-search" class="close-btn">✖</button>
+    </div>
+    <p id="search-message" class="search-message" style="display: none;"></p>
+    <!-- Kết thúc phần card view sản phẩm -->
+    <div class="social-sidebar">
+        <a href="https://www.facebook.com/@romandyou.english" class="social-link facebook" target="_blank">
+            <img src="https://i.pinimg.com/736x/ee/28/3a/ee283a1348a90c6db74c2937493fce74.jpg" alt="Facebook">
+            <span class="social-name">Facebook</span>
+        </a>
+        <a href="https://www.instagram.com/romand_vn/" class="social-link instagram" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram">
+            <span class="social-name">Instagram</span>
+        </a>
+        <a href="https://www.youtube.com/watch?v=As5c9cI0t6Q" class="social-link youtube" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="YouTube">
+            <span class="social-name">YouTube</span>
+        </a>
+    </div>
+    <section class="products">
+        <div class="container-instruct">
+            <h2 class="h2-eye">MÙA THU | MẮT & MẶT GIẢM 25% CHO TOÀN BỘ SẢN PHẨM❤️</h2>
+            <h3 class="h3-eye">*Giá sẽ được giảm tự động khi bạn thêm vào giỏ hàng</h3>
+        </div>
+        <div class="product-list">
+            <div class="product-item">
+                <img class="img-1" src="https://romandvietnam.com/wp-content/uploads/2024/06/Son-Romand-Zero-Velvet-Tint-21-2-768x768.jpg" alt="SL12 After Chill">
+                <p class="name-item">ZV 21 Villain Vest – Son Romand Zero Velvet Tint</p>
+                <p class="p-price-before">399,000₫</p>
+                <p class="p-price-official">279,000₫</p>
+                <button class="btn-shopping-cart" onclick="addToCart('ZV 21 Villain Vest - Son Romand Zero Velvet Tint', 279000,'https://romandvietnam.com/wp-content/uploads/2024/06/Son-Romand-Zero-Velvet-Tint-21-2-768x768.jpg')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div>
+            <div class="product-item">
+                <img class="img-2" src="https://romandvietnam.com/wp-content/uploads/2024/05/5_4c3505eea03c4f89a486970011da19f8_1024x1024.png" alt="SL12 After Chill">
+                <p class="name-item">[MÀU 1-33] Son Tint Lì Romand Juicy Lasting Tint 5.5g</p>
+                <p class="p-price-before">399,000₫</p>
+                <p class="p-price-official">279,000₫</p>
+                <button class="btn-shopping-cart" onclick="addToCart('[MÀU 1-33] Son Tint Lì Romand Juicy Lasting Tint 5.5g', 279000,'https://romandvietnam.com/wp-content/uploads/2024/05/5_4c3505eea03c4f89a486970011da19f8_1024x1024.png')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div>
+            <div class="product-item">
+                <img class="img-3" src="https://romandvietnam.com/wp-content/uploads/2024/06/Son-Romand-Juicy-Lasting-Tint-06-1-768x768.jpg" alt="SL12 After Chill">
+                <p class="name-item">JL 06 FigFig – Son Romand Juicy Lasting Tint</p>
+                <p class="p-price-before">399,000₫</p>
+                <p class="p-price-official">279,000₫</p>
+                <button class="btn-shopping-cart" onclick="addToCart('JL 06 FigFig – Son Romand Juicy Lasting Tint', 279000,'https://romandvietnam.com/wp-content/uploads/2024/06/Son-Romand-Juicy-Lasting-Tint-06-1-768x768.jpg')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div>
+            <div class="product-item">
+                <img class="img-4" src="https://romandvietnam.com/wp-content/uploads/2024/06/Son-Romand-New-Zero-Matte-Lipstick-07-4-768x768.jpg" alt="SL12 After Chill">
+                <p class="name-item">NZ 07 ENVY ME – Son Romand New Zero Matte Lipstick</p>
+                <p class="p-price-before">399,000₫</p>
+                <p class="p-price-official">279,000₫</p>
+                <button class="btn-shopping-cart" onclick="addToCart('NZ 07 ENVY ME – Son Romand New Zero Matte Lipstick', 279000,'https://romandvietnam.com/wp-content/uploads/2024/06/Son-Romand-New-Zero-Matte-Lipstick-07-4-768x768.jpg')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div>
+            <div class="product-item">
+                <img class="img-5" src="https://down-vn.img.susercontent.com/file/vn-11134201-7ras8-m1phw1aaczpb25.webp" alt="SL12 After Chill">
+                <p class="name-item">Romand Dewyful Water Tint 5g</p>
+                <p class="p-price-before">279,000₫</p>
+                <p class="p-price-official">167,000₫</p>
+                <button class="btn-shopping-cart" onclick="addToCart('Romand Dewyful Water Tint 5g', 167000,'https://down-vn.img.susercontent.com/file/vn-11134201-7ras8-m1phw1aaczpb25.webp')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div>
+            <!-- <div class="product-item">
+                <img class="img-1" src="https://romand.us/cdn/shop/products/bear-water-cushion-1000x1500.jpg?v=1670976522&width=360" alt="SL12 After Chill">
+                <p class="name-item">Bare Water Cushion</p>
+                <p class="p-price-before">519,000₫</p>
+                <p class="p-price-official">459,000₫</p>
+                <button class="btn-shopping-cart" onclick="addToCart('Bare Water Cushion', 459000,'https://romand.us/cdn/shop/products/bear-water-cushion-1000x1500.jpg?v=1670976522&width=360')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div>
+            <div class="product-item">
+                <img class="img-2" src="https://romand.us/cdn/shop/products/model_05.jpg?v=1662766870&width=360" alt="SL12 After Chill">
+                <p class="name-item">Nu Zero Cushion</p>
+                <p class="p-price-before">299,000₫</p>
+                <p class="p-price-official">279,000₫</p>
+                <button class="btn-shopping-cart" onclick="addToCart('Nu Zero Cushion', 279000,'https://romand.us/cdn/shop/products/model_05.jpg?v=1662766870&width=360')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div>
+            <div class="product-item">
+                <img class="img-3" src="https://romand.us/cdn/shop/products/zerosunclean.jpg?v=1655705248&width=360" alt="SL12 After Chill">
+                <p class="name-item">Zero Sun Clean SPF50+ PA++++</p>
+                <p class="p-price-before">429,000₫</p>
+                <p class="p-price-official">399,000₫</p>
+                <button class="btn-shopping-cart" onclick="addToCart('Zero Sun Clean SPF50+ PA++++', 399000,'https://romand.us/cdn/shop/products/zerosunclean.jpg?v=1655705248&width=360')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div>
+            <div class="product-item">
+                <img class="img-4" src="https://romand.us/cdn/shop/products/zerocushion2.jpg?v=1662766422&width=360" alt="SL12 After Chill">
+                <p class="name-item">Zero Cushion</p>
+                <p class="p-price-before">339,000₫</p>
+                <p class="p-price-official">239,000₫</p>
+                <button class="btn-shopping-cart" onclick="addToCart('Zero Cushion', 239000,'https://romand.us/cdn/shop/products/zerocushion2.jpg?v=1662766422&width=360')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div>
+            <div class="product-item">
+                <img class="img-5" src="https://romand.us/cdn/shop/products/d242f13e39501e4ab6d255368a9a8cff.jpg?v=1664902875&width=720" alt="SL12 After Chill">
+                <p class="name-item">Better Than Cheek - Renewal</p>
+                <p class="p-price-before">399,000₫</p>
+                <p class="p-price-official">379,000₫</p>
+                <button class="btn-shopping-cart" class="btn-shopping-cart" onclick="addToCart('Better Than Cheek - Renewal', 379000,'https://romand.us/cdn/shop/products/d242f13e39501e4ab6d255368a9a8cff.jpg?v=1664902875&width=720')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div>
+            <div class="product-item">
+                <img class="img-6" src="https://romand.us/cdn/shop/products/Untitled-3.jpg?v=1663025738&width=360" alt="SL12 After Chill">
+                <p class="name-item">See-Through Veil Lighter</p>
+                <p class="p-price-before">669,000₫</p>
+                <p class="p-price-official">519,000₫</p>
+                <button class="btn-shopping-cart" onclick="addToCart('See-Through Veil Lighter', 319000,'https://romand.us/cdn/shop/products/Untitled-3.jpg?v=1663025738&width=360')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div> -->
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="company-info">
+                <p><strong>CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ THÀNH TIẾN</strong></p>
+                <p><i class="ti-location-pin"></i> QUẬN THANH KHÊ, ĐÀ NẴNG</p>
+                <p><i class="ti-headphone-alt"></i> Số điện thoại: 0905125***</p>
+            </div>
+            <div class="customer-support">
+                <p><strong>HỖ TRỢ KHÁCH HÀNG</strong></p>
+                <a href="https://www.facebook.com/thanhtien.ngo.921" target="_blank"><i class="ti-facebook"> Facebook</i></a>
+                <a href="http://www.instagram.com/ng.ttieen_1406" target="_blank"><i class="ti-instagram"> Instagram</i></a>
+            </div>
+            <div class="working-hours">
+                <p><strong>GIỜ MỞ CỬA</strong></p>
+                <p><i class="ti-time"></i> Từ 8:30 - 22:30 hằng ngày</p>
+            </div>
+        </div>
+    </footer>
+    <script src="face_product.js"></script>
+</body>
+</html>

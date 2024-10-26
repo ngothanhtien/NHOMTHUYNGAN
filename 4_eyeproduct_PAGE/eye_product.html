@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm Của Bạn</title>
+    <link rel="stylesheet" href="eye_product.css">
+    <link rel="stylesheet" href="/fonts/themify-icons/themify-icons.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="https://romand.us/cdn/shop/files/romnd_logo4_420x.png?v=1728358166" alt="Merzy Logo" class="logo">
+            <nav>
+                <ul class="left-menu">
+                    <li><a href="/1_home_PAGE/home.html"><i class="ti-home"></i>  TRANG CHỦ</a></li>
+                    <li><a href="/2_newproduct_PAGE/new_product.html">SẢN PHẨM MỚI</a></li>
+                    <li><a href="/3_lipproduct_PAGE/lip_product.html">MÔI</a></li>
+                    <li><a href="eye_product.html" class="li-mat">MẮT</a></li>
+                    <li><a href="/5_faceproduct_PAGE/face_product.html">MẶT</a></li>
+                </ul>
+                <ul class="right-menu">
+                    <li>
+                        <button id="search-btn" class="search-btn" aria-label="Search" onclick="noTifyMessage()">
+                            <i class="ti-search"></i>
+                        </button>
+                    </li>
+                    <li><a href="/6_account_PAGE/account.html"><i class="ti-user"></i></a></li>
+                    <li><a href="/7_shoppingCart_PAGE/shopping_cart.html"><i class="ti-shopping-cart"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="search-bar" class="search-bar" style="display: none;">
+        <input type="text" id="search-input" placeholder="Nhập sản phẩm cần tìm...">
+        <button id="close-search" class="close-btn">✖</button>
+    </div>
+    <p id="search-message" class="search-message" style="display: none;"></p>
+    <!-- Kết thúc phần card view sản phẩm -->
+    <div class="social-sidebar">
+        <a href="https://www.facebook.com/@romandyou.english" class="social-link facebook" target="_blank">
+            <img src="https://i.pinimg.com/736x/ee/28/3a/ee283a1348a90c6db74c2937493fce74.jpg" alt="Facebook">
+            <span class="social-name">Facebook</span>
+        </a>
+        <a href="https://www.instagram.com/romand_vn/" class="social-link instagram" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram">
+            <span class="social-name">Instagram</span>
+        </a>
+        <a href="https://www.youtube.com/watch?v=As5c9cI0t6Q" class="social-link youtube" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="YouTube">
+            <span class="social-name">YouTube</span>
+        </a>
+    </div>
+    <!-- Danh sách sản phẩm bán chạy -->
+    <section class="products">
+        <div class="container-instruct">
+            <h2 class="h2-eye">MÙA THU | MẮT & MẶT GIẢM 25% CHO TOÀN BỘ SẢN PHẨM❤️</h2>
+            <h3 class="h3-eye">*Giá sẽ được giảm tự động khi bạn thêm vào giỏ hàng</h3>
+        </div>
+        <div class="product-list">
+            <div class="product-item">
+                <img class="img-1" src="https://romandvietnam.com/wp-content/uploads/2024/06/Son-Romand-Zero-Velvet-Tint-21-2-768x768.jpg" alt="SL12 After Chill">
+                <p class="name-item">ZV 21 Villain Vest – Son Romand Zero Velvet Tint</p>
+                <p class="p-price-before">399,000₫</p>
+                <p class="p-price-official">279,000₫</p>
+                <button class="btn-shopping-cart" onclick="addToCart('ZV 21 Villain Vest - Son Romand Zero Velvet Tint', 279000,'https://romandvietnam.com/wp-content/uploads/2024/06/Son-Romand-Zero-Velvet-Tint-21-2-768x768.jpg')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div>
+            <div class="product-item">
+                <img class="img-2" src="https://romandvietnam.com/wp-content/uploads/2024/05/5_4c3505eea03c4f89a486970011da19f8_1024x1024.png" alt="SL12 After Chill">
+                <p class="name-item">[MÀU 1-33] Son Tint Lì Romand Juicy Lasting Tint 5.5g</p>
+                <p class="p-price-before">399,000₫</p>
+                <p class="p-price-official">279,000₫</p>
+                <button class="btn-shopping-cart" onclick="addToCart('[MÀU 1-33] Son Tint Lì Romand Juicy Lasting Tint 5.5g', 279000,'https://romandvietnam.com/wp-content/uploads/2024/05/5_4c3505eea03c4f89a486970011da19f8_1024x1024.png')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div>
+            <div class="product-item">
+                <img class="img-3" src="https://romandvietnam.com/wp-content/uploads/2024/06/Son-Romand-Juicy-Lasting-Tint-06-1-768x768.jpg" alt="SL12 After Chill">
+                <p class="name-item">JL 06 FigFig – Son Romand Juicy Lasting Tint</p>
+                <p class="p-price-before">399,000₫</p>
+                <p class="p-price-official">279,000₫</p>
+                <button class="btn-shopping-cart" onclick="addToCart('JL 06 FigFig – Son Romand Juicy Lasting Tint', 279000,'https://romandvietnam.com/wp-content/uploads/2024/06/Son-Romand-Juicy-Lasting-Tint-06-1-768x768.jpg')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div>
+            <div class="product-item">
+                <img class="img-4" src="https://romandvietnam.com/wp-content/uploads/2024/06/Son-Romand-New-Zero-Matte-Lipstick-07-4-768x768.jpg" alt="SL12 After Chill">
+                <p class="name-item">NZ 07 ENVY ME – Son Romand New Zero Matte Lipstick</p>
+                <p class="p-price-before">399,000₫</p>
+                <p class="p-price-official">279,000₫</p>
+                <button class="btn-shopping-cart" onclick="addToCart('NZ 07 ENVY ME – Son Romand New Zero Matte Lipstick', 279000,'https://romandvietnam.com/wp-content/uploads/2024/06/Son-Romand-New-Zero-Matte-Lipstick-07-4-768x768.jpg')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div>
+            <div class="product-item">
+                <img class="img-5" src="https://down-vn.img.susercontent.com/file/vn-11134201-7ras8-m1phw1aaczpb25.webp" alt="SL12 After Chill">
+                <p class="name-item">Romand Dewyful Water Tint 5g</p>
+                <p class="p-price-before">279,000₫</p>
+                <p class="p-price-official">167,000₫</p>
+                <button class="btn-shopping-cart" onclick="addToCart('Romand Dewyful Water Tint 5g', 167000,'https://down-vn.img.susercontent.com/file/vn-11134201-7ras8-m1phw1aaczpb25.webp')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div>
+            <!-- <div class="product-item">
+                <img class="img-1" src="https://romand.us/cdn/shop/products/palette.jpg?v=1638992069&width=360" alt="SL12 After Chill">
+                <p class="name-item">Better Than Palette Secret Garden</p>
+                <p class="p-price-before">399,000₫</p>
+                <p class="p-price-official">319,000₫</p>
+                <button class="btn-shopping-cart" onclick="addToCart('Better Than Palette Secret Garden', 319000,'https://romand.us/cdn/shop/products/palette.jpg?v=1638992069&width=360')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div>
+            <div class="product-item">
+                <img class="img-2" src="https://romand.us/cdn/shop/products/us_3cdacee2-b65b-44c9-807c-73bd0d406a20.jpg?v=1663004775&width=360" alt="SL11 Non Standard">
+                <p class="name-item">Better Than Palette Light and Glitter Garden</p>
+                <p class="p-price-before">919,000₫</p>
+                <p class="p-price-official">779,000₫</p>
+                <button class="btn-shopping-cart" class="btn-shopping-cart" onclick="addToCart('Better Than Palette Light and Glitter Garden', 779000,'https://romand.us/cdn/shop/products/us_3cdacee2-b65b-44c9-807c-73bd0d406a20.jpg?v=1663004775&width=360')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div>
+            <div class="product-item">
+                <img class="img-3" src="https://romand.us/cdn/shop/products/hanall_mascara.jpg?v=1639002390&width=360" alt="SL10 Medium Tempo">
+                <p class="name-item">Han All Fix Mascara 7g</p>
+                <p class="p-price-before">479,000₫</p>
+                <p class="p-price-official">429,000₫</p>
+                <button class="btn-shopping-cart" onclick="addToCart('Han All Fix Mascara 7g', 429000,'https://romand.us/cdn/shop/products/hanall_mascara.jpg?v=1639002390&width=360')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div>
+            <div class="product-item">
+                <img class="img-4" src="https://romand.us/cdn/shop/products/flat_brow.jpg?v=1639002148&width=360" alt="SL09 Daydream">
+                <p class="name-item">Han All Flat Brow</p>
+                <p class="p-price-before">299,000₫</p>
+                <p class="p-price-official">259,000₫</p>
+                <button class="btn-shopping-cart" onclick="addToCart('Han All Flat Brow', 259000,'https://romand.us/cdn/shop/products/flat_brow.jpg?v=1639002148&width=360')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div>
+            <div class="product-item">
+                <img class="img-5" src="https://romand.us/cdn/shop/products/product.jpg?v=1679882391&width=360" alt="SL08 Stargazer">
+                <p class="name-item">Han All Brow Cara 9g</p>
+                <p class="p-price-before">459,000₫</p>
+                <p class="p-price-official">379,000₫</p>
+                <button class="btn-shopping-cart" onclick="addToCart('Han All Brow Cara 9g', 379000,'https://romand.us/cdn/shop/products/product.jpg?v=1679882391&width=360')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div>
+            <div class="product-item">
+                <img class="img-6" src="https://romand.us/cdn/shop/files/2_a7a4a7e7-e7b2-4e8a-906c-348d32946393.jpg?v=1693979633&width=360" alt="SL07 Moonlight">
+                <p class="name-item">Twinkle Pen Liner</p>
+                <p class="p-price-before">419,000₫</p>
+                <p class="p-price-official">399,000₫</p>
+                <button class="btn-shopping-cart" onclick="addToCart('Twinkle Pen Liner', 399000,'https://romand.us/cdn/shop/files/2_a7a4a7e7-e7b2-4e8a-906c-348d32946393.jpg?v=1693979633&width=360')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div>
+            <div class="product-item">
+                <img class="img-7" src="https://romand.us/cdn/shop/products/betterthaneyes_milk.jpg?v=1639011761&width=360" alt="SL06 Night Vibe">
+                <p class="name-item">Better Than Eyes Milk Edition</p>
+                <p class="p-price-before">639,000₫</p>
+                <p class="p-price-official">529,000₫</p>
+                <button class="btn-shopping-cart" onclick="addToCart('Better Than Eyes Milk Edition', 529000,'https://romand.us/cdn/shop/products/betterthaneyes_milk.jpg?v=1639011761&width=360')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div>
+            <div class="product-item">
+                <img class="img-8" src="https://romand.us/cdn/shop/products/Hanallbrowfixer.png?v=1655965203&width=360" alt="SL05 Sunset Glow">
+                <p class="name-item">Han All Brow Fixer 9g</p>
+                <p class="p-price-before">379,000₫</p>
+                <p class="p-price-official">329,000₫</p>
+                <button class="btn-shopping-cart" onclick="addToCart('Han All Brow Fixer 9g', 329000,'https://romand.us/cdn/shop/products/Hanallbrowfixer.png?v=1655965203&width=360')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div>
+            <div class="product-item">
+                <img class="img-9" src="https://romand.us/cdn/shop/products/dreamy-lilac-garden.jpg?v=1664837420&width=360" alt="SL05 Sunset Glow">
+                <p class="name-item">Better Than Palette Milk Grocery Series 09 Dreamy Lilac Garden</p>
+                <p class="p-price-before">889,000₫</p>
+                <p class="p-price-official">759,000₫</p>
+                <button class="btn-shopping-cart" onclick="addToCart('Better Than Palette Milk Grocery Series 09 Dreamy Lilac Garden', 759000,'https://romand.us/cdn/shop/products/dreamy-lilac-garden.jpg?v=1664837420&width=360')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div>
+            <div class="product-item">
+                <img class="img-10" src="https://romand.us/cdn/shop/products/han_all_eyelash_serum.jpg?v=1656041224&width=360" alt="SL05 Sunset Glow">
+                <p class="name-item">Han All Eyelash Serum</p>
+                <p class="p-price-before">399,000₫</p>
+                <p class="p-price-official">379,000₫</p>
+                <button class="btn-shopping-cart" onclick="addToCart('Han All Eyelash Serum', 379000,'https://romand.us/cdn/shop/products/han_all_eyelash_serum.jpg?v=1656041224&width=360')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div>
+            <div class="product-item">
+                <img class="img-11" src="https://romand.us/cdn/shop/products/palette_5f4e9cf9-c138-4ab7-a543-802cd6b323e6.jpg?v=1663004637&width=360" alt="SL05 Sunset Glow">
+                <p class="name-item">Better Than Palette Energetic Series</p>
+                <p class="p-price-before">889,000₫</p>
+                <p class="p-price-official">729,000₫</p>
+                <button class="btn-shopping-cart" onclick="addToCart('Better Than Palette Energetic Series', 729000,'https://romand.us/cdn/shop/products/palette_5f4e9cf9-c138-4ab7-a543-802cd6b323e6.jpg?v=1663004637&width=360')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div>
+            <div class="product-item">
+                <img class="img-12" src="https://romand.us/cdn/shop/products/new___2.jpg?v=1663957171&width=360" alt="SL05 Sunset Glow">
+                <p class="name-item">Better Than Eyes N Series 6g</p>
+                <p class="p-price-before">629,000₫</p>
+                <p class="p-price-official">529,000₫</p>
+                <button class="btn-shopping-cart" onclick="addToCart('Better Than Eyes N Series 6g', 529000,'https://romand.us/cdn/shop/products/new___2.jpg?v=1663957171&width=360')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div>
+            <div class="product-item">
+                <img class="img-13" src="https://romand.us/cdn/shop/products/M01-dry-apple-blossom_3.jpg?v=1663005803&width=360" alt="SL05 Sunset Glow">
+                <p class="name-item">Better Than Eyes Music Series</p>
+                <p class="p-price-before">569,000₫</p>
+                <p class="p-price-official">499,000₫</p>
+                <button class="btn-shopping-cart" onclick="addToCart('Better Than Eyes Music Series', 499000,'https://romand.us/cdn/shop/products/M01-dry-apple-blossom_3.jpg?v=1663005803&width=360')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div>
+            <div class="product-item">
+                <img class="img-14" src="https://romand.us/cdn/shop/files/12_7.jpg?v=1717747571&width=360" alt="SL05 Sunset Glow">
+                <p class="name-item">The Universe Liquid Glitter</p>
+                <p class="p-price-before">399,000₫</p>
+                <p class="p-price-official">319,000₫</p>
+                <button class="btn-shopping-cart" onclick="addToCart('The Universe Liquid Glitter', 319000,'https://romand.us/cdn/shop/files/12_7.jpg?v=1717747571&width=360')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div>
+            <div class="product-item">
+                <img class="img-15" src="https://romand.us/cdn/shop/files/1-1.png?v=1717747612&width=360" alt="SL05 Sunset Glow">
+                <p class="name-item">Better Than Palette #Spring Fever</p>
+                <p class="p-price-before">1,299,000₫</p>
+                <p class="p-price-official">1,099,000₫</p>
+                <button class="btn-shopping-cart" onclick="addToCart('Glasting Water Tint 4g', 1099000,'https://romand.us/cdn/shop/files/1-1.png?v=1717747612&width=360')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div>
+            <div class="product-item">
+                <img class="img-16" src="https://romand.us/cdn/shop/products/hanall_brow_1.jpg?v=1638490198&width=360" alt="SL05 Sunset Glow">
+                <p class="name-item">Han All Sharp Brow</p>
+                <p class="p-price-before">399,000₫</p>
+                <p class="p-price-official">319,000₫</p>
+                <button class="btn-shopping-cart" onclick="addToCart('Han All Sharp Brow', 319000,'https://romand.us/cdn/shop/products/hanall_brow_1.jpg?v=1638490198&width=360')"><img class="icon-cart-add" src="https://www.svgrepo.com/show/313657/cart-plus-solid.svg" alt=""></button>
+            </div> -->
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="company-info">
+                <p><strong>CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ THÀNH TIẾN</strong></p>
+                <p><i class="ti-location-pin"></i> QUẬN THANH KHÊ, ĐÀ NẴNG</p>
+                <p><i class="ti-headphone-alt"></i> Số điện thoại: 0905125***</p>
+            </div>
+            <div class="customer-support">
+                <p><strong>HỖ TRỢ KHÁCH HÀNG</strong></p>
+                <a href="https://www.facebook.com/thanhtien.ngo.921" target="_blank"><i class="ti-facebook"> Facebook</i></a>
+                <a href="http://www.instagram.com/ng.ttieen_1406" target="_blank"><i class="ti-instagram"> Instagram</i></a>
+            </div>
+            <div class="working-hours">
+                <p><strong>GIỜ MỞ CỬA</strong></p>
+                <p><i class="ti-time"></i> Từ 8:30 - 22:30 hằng ngày</p>
+            </div>
+        </div>
+    </footer>
+    <script src="eye_product.js"></script>
+</body>
+</html>

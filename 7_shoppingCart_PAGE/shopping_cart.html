@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm Của Bạn</title>
+    <link rel="stylesheet" href="shopping_cart.css">
+    <link rel="stylesheet" href="/fonts/themify-icons/themify-icons.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="https://romand.us/cdn/shop/files/romnd_logo4_420x.png?v=1728358166" alt="Merzy Logo" class="logo">
+            <nav>
+                <ul class="left-menu">
+                    <li><a href="/1_home_PAGE/home.html"><i class="ti-home"></i>  TRANG CHỦ</a></li>
+                    <li><a href="/2_newproduct_PAGE/new_product.html">SẢN PHẨM MỚI</a></li>
+                    <li><a href="/3_lipproduct_PAGE/lip_product.html">MÔI</a></li>
+                    <li><a href="/4_eyeproduct_PAGE/eye_product.html">MẮT</a></li>
+                    <li><a href="/5_faceproduct_PAGE/face_product.html">MẶT</a></li>
+                </ul>
+                <ul class="right-menu">
+                    <li><a href="/6_account_PAGE/account.html"><i class="ti-user"></i></a></li>
+                    <li><a href="shopping_cart.html" class="icon-shoppingcart"><i class="ti-shopping-cart"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Bắt đầu phần card view sản phẩm -->
+    <!-- chứa view của sản phẩm sau khi thêm -->
+    <div class="product-list"></div>
+    <div id="orderDialog" class="order-dialog" style="display:none;">
+        <div class="dialog-content">
+            <i class="ti-close close-button" onclick="closeDialog()"></i>
+            <h2>Thông Tin Khách Hàng</h2>
+            <label class="LB-info" for="customerName">Tên:</label>
+            <input class="IP-info" type="text" id="customerName" placeholder="Nhập Họ&Tên của bạn" required>
+    
+            <label class="LB-info" for="customerAddress">Địa chỉ:</label>
+            <input class="IP-info" type="text" id="customerAddress" placeholder="Nhập địa chỉ của bạn" required>
+    
+            <label class="LB-info" for="customerPhone">Số điện thoại:</label>
+            <input class="IP-info" type="tel" id="customerPhone" placeholder="Nhập số điện thoại của bạn" required>
+
+            <div class="button-container">
+                <button class="btn-order-dialog" onclick="confirmOrder()">Đặt Hàng</button>
+            </div>
+        </div>
+    </div>
+    <!-- Kết thúc phần card view sản phẩm -->
+    <div class="social-sidebar">
+        <a href="https://www.facebook.com/@romandyou.english" class="social-link facebook" target="_blank">
+            <img src="https://i.pinimg.com/736x/ee/28/3a/ee283a1348a90c6db74c2937493fce74.jpg" alt="Facebook">
+            <span class="social-name">Facebook</span>
+        </a>
+        <a href="https://www.instagram.com/romand_vn/" class="social-link instagram" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram">
+            <span class="social-name">Instagram</span>
+        </a>
+        <a href="https://www.youtube.com/watch?v=As5c9cI0t6Q" class="social-link youtube" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="YouTube">
+            <span class="social-name">YouTube</span>
+        </a>
+    </div>
+
+    <script src="shopping_cart.js"></script>
+</body>
+</html>

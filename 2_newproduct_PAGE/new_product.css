@@ -1,0 +1,391 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    padding: 10px 30px;
+}
+body {
+    margin: 0;
+    padding-top: 80px;
+}
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.header-container img{
+    margin-top: 30px;
+    width: 250px;
+    height: 27px;
+    margin-left: 25px;
+}
+.header-container{
+    margin-top: -20px;
+    margin-bottom: 0px;
+    margin-bottom: 20px;
+}
+header nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    color: #333;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-top: 20px;
+}
+.left-menu,
+.right-menu {
+    display: flex;
+    align-items: center; 
+}
+
+.left-menu li {
+    margin: 0 10px;
+    font-weight:bold ; 
+    font-size: 18px;
+}
+.search-btn{
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+.search-btn:hover{
+    color: #ff6347;
+    border-radius: 18px;
+    background-color: #f2eaea;
+}
+.right-menu {
+    margin-left: auto; 
+    font-size: 18px;
+}
+.right-menu{
+    margin-right: 55px;
+}
+.right-menu li {
+    margin: 0 5px;
+}
+header nav ul li a:hover {
+    color: #ff6347;
+    border-radius: 18px;
+    background-color: #f2eaea;
+}
+.li-SPMoi{
+    color: #ff6347;
+    border-radius: 18px;
+    background-color: #f2eaea;
+}
+/* phần taskbar bên phải */
+.social-sidebar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%); 
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+.social-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    transition: width 0.7s;
+}
+
+.social-link img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.social-link .social-name {
+    position: absolute;
+    right: 60px;
+    white-space: nowrap;
+    opacity: 0; 
+    transition: opacity 0.3s;
+    color: #333;
+}
+.facebook {
+    background-color: #3B5998; 
+}
+.facebook:hover {
+    width: 150px;
+    background-color: #3B5998; 
+}
+.facebook:hover .social-name {
+    opacity: 1;
+     color: #fff; 
+}
+
+.instagram {
+    background-color: #C13584; 
+}
+.instagram:hover {
+    width: 150px;
+    background-color: #C13584; 
+}
+.instagram:hover .social-name {
+    opacity: 1;
+     color: #fff; 
+}
+.youtube {
+    background-color: #FF0000; 
+}
+.youtube:hover {
+    width: 150px;
+    background-color: #FF0000; 
+}
+.youtube:hover .social-name {
+    opacity: 1;
+     color: #fff; 
+}
+/* danh sách các sản phẩm */
+.products{
+    margin-top: 100px;
+}
+.h2-bestSell {
+    font-size: 30px;
+    font-style: inherit;
+    margin-bottom: 20px;
+    margin-left: 55px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 10px 55px;
+}
+.h2-new-collections{
+    text-align: center;
+    font-size: 30px;
+    font-style: inherit;
+    margin-bottom: 70px;
+    margin-left: 55px;
+
+}
+.product-item {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 30px;
+    background-color: #f9f9f9;
+    min-height: 200px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+}
+.btn-shopping-cart{
+    align-items: center;
+    width: 50px;
+    background-color: transparent;
+    border: none;
+}
+.btn-shopping-cart:hover{
+    background-color: #a89f9f;
+    border-radius: 10px;
+}
+.product-item .name-item{
+    font-size: 17px;
+    font-weight: 550;
+    color: #333;
+}
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; 
+    border-radius: 20px;
+    transition: transform 0.4s ease-in-out, content 0.5s ease-in-out;
+}
+.product-item .img-1:hover{
+    content: url("https://romandvietnam.com/wp-content/uploads/2024/06/Son-Romand-Zero-Velvet-Tint-21-5-768x768.jpg");
+    transform: scale(0.96); 
+    cursor: pointer;
+}
+.product-item .img-2:hover{
+    content: url("https://romandvietnam.com/wp-content/uploads/2024/05/b535b222d93501899fafb253d01f6935-768x768.png");
+    transform: scale(0.96);
+    cursor: pointer;
+}
+.product-item .img-3:hover{
+    content: url("https://romandvietnam.com/wp-content/uploads/2024/06/Son-Romand-Juicy-Lasting-Tint-06-5-768x768.jpg");
+    transform: scale(0.96); 
+    cursor: pointer;
+}
+.product-item .img-4:hover{
+    content: url("https://romandvietnam.com/wp-content/uploads/2024/06/Son-Romand-New-Zero-Matte-Lipstick-07-2-768x768.jpg");
+    transform: scale(0.96); 
+    cursor: pointer;
+}
+.product-item .img-5:hover{
+    content: url("https://down-vn.img.susercontent.com/file/vn-11134201-7ras8-m1dtgu59fu5437.webp");
+    transform: scale(0.96); 
+    cursor: pointer;
+}
+/* .product-item .img-1:hover{
+    content: url("https://romand.us/cdn/shop/products/28BareFIg.png?v=1663003991&width=720");
+    transform: scale(0.96); 
+    cursor: pointer;
+}
+.product-item .img-2:hover{
+    content: url("https://romand.us/cdn/shop/files/13_ce672dd7-47fd-4247-ae1d-cadad9a1290d.jpg?v=1708061793");
+    transform: scale(0.96);
+    cursor: pointer;
+}
+.product-item .img-3:hover{
+    content: url("https://romand.us/cdn/shop/products/02_eatdortori_best_tint.jpg?v=1663002250");
+    transform: scale(0.96); 
+    cursor: pointer;
+}
+.product-item .img-4:hover{
+    content: url("https://romand.us/cdn/shop/products/glasting_water_tint_swatch.jpg?v=1663005222&width=720");
+    transform: scale(0.96); 
+    cursor: pointer;
+}
+.product-item .img-5:hover{
+    content: url("https://romand.us/cdn/shop/products/01_red_tea_01.jpg?v=1652991940");
+    transform: scale(0.96); 
+    cursor: pointer;
+}
+.product-item .img-6:hover{
+    content: url("https://romand.us/cdn/shop/products/10_nudy_peanut_01_553785d9-0e78-4f2e-b9b0-727bd68f1e56.jpg?v=1646038062");
+    transform: scale(0.96);
+    cursor: pointer; 
+}
+.product-item .img-7:hover{
+    content: url("https://romand.us/cdn/shop/products/03_vintage_taupe_01.jpg?v=1663018848");
+    transform: scale(0.96); 
+    cursor: pointer;
+} */
+.p-price-before{
+    text-decoration: line-through;
+    color: #FF0000;
+    font-size: 14px;
+}
+.p-price-official{
+    font-size: 20px;
+    font-weight: bold;
+}
+/* phần hổ trợ khách hàng các thứ */
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fdecec; /* Màu nền của footer */
+    color: #4c4c4b; /* Màu chữ */
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+    height: 180px;
+    margin-top: 70px;
+}
+.fixed-footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fdecec; /* Màu nền của footer */
+    color: #4c4c4b; /* Màu chữ */
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+    height: 180px;
+    margin-top: 70px;
+}
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-content div {
+    flex: 1;
+    padding: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+.customer-support a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: #4c4c4b;
+    font-size: 20px;
+}
+/* phần chuyển cảnh */
+.fade {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Hiệu ứng mờ trong 0.5 giây */
+}
+
+.fade-in {
+    opacity: 1;
+}
+.fade {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Hiệu ứng mờ trong 0.5 giây */
+}
+
+.fade-in {
+    opacity: 1;
+}
+/* search-btn */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    padding: 10px;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    margin-top: 30px;
+}
+#search-input {
+    width: 40%;
+    padding: 10px;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+.close-btn {
+    margin-left: 10px;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+/* thẻ p thông báo sản phẩm */
+.search-message {
+    text-align: center;
+    margin-top: 100px; /* Khoảng cách từ input đến thông báo */
+    color: red; /* Màu chữ thông báo */
+    font-size: 20px; /* Kích thước chữ */
+    display: none; /* Ẩn mặc định */
+    font-weight: bold; /* Độ đậm của chữ */
+}

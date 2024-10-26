@@ -1,0 +1,149 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+    }
+    
+    body, html {
+     height: 100%;
+     font-family: Arial, sans-serif;
+    }
+    
+    .login-container {
+     background-color: #fdecec;
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+    }
+    
+    .login-form {
+     background-color: rgba(184, 152, 152, 0.8);
+     padding: 40px;
+     border-radius: 10px;
+     width: 100%;
+     max-width: 400px;
+     color: white;
+     text-align: center;
+     height: 550px;
+    }
+    .show-password{
+        font-size: 20px;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+    .img-back-home{
+        width: 200px;
+        height: 30px;
+        margin-bottom: 20px;
+    }
+    .login-form h2 {
+        margin-top: 10px;
+     margin-bottom: 40px;
+     font-size: 32px;
+     color: #000000;
+    }
+    
+    form input {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 12px;
+        border-radius: 5px;
+        border: 2px solid #555; /* Viền màu tối */
+        background-color: #333;
+        color: white;
+        font-size: 16px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+        transition: border 0.3s, box-shadow 0.3s; /* Hiệu ứng mượt khi thay đổi */
+    }
+    
+    /* Hiệu ứng khi người dùng click vào (focus) */
+    form input:focus {
+        border: 2px solid #1e90ff; /* Viền xanh lam sáng khi focus */
+        outline: none; /* Xóa viền mặc định */
+        box-shadow: 0 0 8px rgba(30, 144, 255, 0.5); /* Đổ bóng xanh nhạt */
+    }
+    
+    /* Hiệu ứng khi hover */
+    form input:hover {
+        border-color: #888; /* Viền sáng hơn khi hover */
+    }
+    
+    form button {
+     width: 50%;
+     padding: 12px;
+     background-color: #3b5998;
+     border: none;
+     color: #d1cfcf;
+     font-size: 15px;
+     margin-top: 10px;
+     border-radius: 8px;
+     cursor: pointer;
+     transform: scale(1);
+     font-weight: bold;
+    }
+    
+    form button:hover {
+     background-color: #444;
+     transform: scale(1.02);
+     transition: tranform 0.3s ease;
+    }
+    
+    .password-container {
+     position: relative;
+    }
+    
+    .password-container i {
+     position: absolute;
+     top: 50%;
+     right: 10px;
+     transform: translateY(-50%);
+     cursor: pointer;
+    }
+    
+    .account-msg {
+     margin: 15px 0;
+     color: #000000;
+    }
+    
+    .or-login-with {
+     margin-top: 20px;
+    }
+    
+    .or-login-with p {
+     margin-bottom: 20px;
+     font-style:oblique;
+     color: #525d69;
+    }
+    
+    .social-buttons {
+     display: flex;
+     justify-content: center;
+    }
+    
+    .social-buttons button {
+      margin: 0 10px;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 120px;
+    }
+    .facebook {
+     background-color: #3b5998;
+     color: white;
+    }
+    
+    .google {
+      background-color: #db4437;
+      color: white;
+    }
+    .fade {
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out; /* Hiệu ứng mờ trong 0.5 giây */
+    }
+    
+    .fade-in {
+        opacity: 1;
+    }
